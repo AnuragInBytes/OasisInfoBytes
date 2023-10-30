@@ -1,0 +1,52 @@
+<!DOCtypeBtn html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anurag ka Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <!-- <p class="display-calculation">
+            
+        </p> -->
+        <input type="text">
+
+        <p>
+            <button onclick="typeBtn('7')" class="num">7</button>
+            <button onclick="typeBtn('8')" class="num">8</button>
+            <button onclick="typeBtn('9')" class="num">9</button>
+            <button onclick="typeBtn(' + ')" class="opr">+</button>
+        </p>
+
+        <p>
+            <button onclick="typeBtn('4')" class="num">4</button>
+            <button onclick="typeBtn('5')" class="num">5</button>
+            <button onclick="typeBtn('6')" class="num">6</button>
+            <button onclick="typeBtn(' - ')" class="opr">-</button>
+        </p>
+
+        <p>
+            <button onclick="typeBtn('1')" class="num">1</button>
+            <button onclick="typeBtn('2')" class="num">2</button>
+            <button onclick="typeBtn('3')" class="num">3</button>
+            <button onclick="typeBtn(' * ')" class="opr">x</button>
+        </p>
+
+        <p>
+            <button onclick="typeBtn('0')" class="num">0</button>
+            <button onclick="typeBtn('.')" class="num">.</button>
+            <button onclick="solution();" class="equals-to">=</button>
+            <button onclick="typeBtn(' / ')" class="opr">/</button>
+        </p>
+        
+        <p>
+            <button class="clear-btn">Clear</button>
+        </p>
+
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
