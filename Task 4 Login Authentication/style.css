@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,50,0.4),rgba(0,0,50,0.4)), url(joanna-kosinska-7ACuHoezUYk-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.form-block{
+    width: 90%;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 50px 60px 70px;
+    text-align: center;
+}
+.form-block h1{
+    font-size: 40px;
+    margin-bottom: 60px;
+    color: #310081;
+}
+/* 
+.form-block h1::after{
+    content: '';
+    width: 40px;
+    height: 4px;
+    position: absolute;
+    border-radius: 4px;
+    background-color: #310081;
+    left: 50%;
+    transform: translateX(-50%);
+}
+*/
+.input-field{
+    background-color: #aeaeae;
+    margin: 15px 0px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+input{
+    border: none;
+    background: transparent;
+    width: 100%;
+    outline: 0;
+    padding: 18px 15px;
+}
+.input-field i{
+    margin-left: 15px;
+    color: #6a6a6a;
+}
+.form-block p{
+    text-align: left;
+    font-size: 14px;
+}
+.form-block p a{
+    text-decoration: none;
+    color: #310081;
+    text-decoration:underline;
+}
+.btn-field{
+    display: flex;
+    justify-content: space-between;
+}
+.btn-field button{
+    border: none;
+    flex-basis: 48%;
+    outline: none;
+    height: 40px;
+    background-color: #310081;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-top: 30px;
+    transition: background 1s;
+}
+.btn-field button.disable{
+    background-color: #aeaeae;
+    color: #6a6a6a;
+}
